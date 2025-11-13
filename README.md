@@ -54,8 +54,7 @@ O aplicativo deve listar obrigatoriamente as seguintes cidades e seus respectivo
 * **Frameworks Opcionais (Preferência na Ordem):**
     1.  **React** com **Next.js**
     2.  **React** com **Vite**
-    3.  **Vue**
-    4.  **Angular**
+    3.  **Angular**
 
 #### 4. Design e Responsividade
 * **Fidelidade ao Layout:** A implementação deve seguir rigorosamente o design fornecido no link do Figma.
