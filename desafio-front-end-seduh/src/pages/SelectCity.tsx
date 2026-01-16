@@ -1,8 +1,7 @@
-import { use } from "react"
+
 import { cities } from "../data/cities"
 import { useNavigate } from "react-router-dom"
 import Globe from '../assets/icons/globe.svg'
-import CityWeather from "./CityWeather"
 
 
 const SelectCity = () => {
