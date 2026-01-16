@@ -1,0 +1,216 @@
+/* Fonte */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: #fff;
+}
+
+/* ---------- TELA SELECT ---------- */
+
+.select-screen {
+    background-color: #0f0f0f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.select-panel {
+  display: flex;
+  margin-top: 64px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.select-title {
+  font-size: 56px;
+  font-weight: 300;
+}
+
+.select-subtitle {
+  font-size: 22px;
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+.select-globe {
+  width: 120px;
+  height: 120px;
+  margin: 10px 0;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 10px;
+}
+
+.city-item {
+  background: none;
+  border: none;
+  color: #f9f9f9;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.city-item:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .select-title {
+    font-size: 48px;
+  }
+
+  .select-globe {
+    width: 100px;
+    height: 100px;
+  }
+
+  .city-grid {
+    gap: 16px 24px;
+  }
+}
+
+.weather-screen.default {
+  background-color: #2CAEFF; 
+  color: #ffffff;
+}
+
+.weather-screen.default .weather-icon {
+  filter: invert(1);
+}
+
+
+.weather-screen.cold {
+  background-color: #CACACA; 
+  color: #0f0f0f;
+}
+
+
+
+.weather-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.weather-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.city-name {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.weather-condition {
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.temp-value {
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.temp-unit {
+  font-size: 28px;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.temp-range {
+  font-size: 14px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.main-icon {
+  font-size: 72px;
+  margin: 24px 0;
+}
+
+.periods {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 24px 0;
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.period .icon {
+  font-size: 24px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.detail-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.details span {
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .temp-value {
+    font-size: 72px;
+  }
+
+  .periods {
+    gap: 24px;
+  }
+
+  .details {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
