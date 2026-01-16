@@ -12,7 +12,7 @@ body {
   color: #fff;
 }
 
-/* ---------- TELA SELECT ---------- */
+/* ---------- TELA 1 SELECIONAR CIDADES ---------- */
 
 .select-screen {
     background-color: #0f0f0f;
@@ -83,6 +83,8 @@ body {
     gap: 16px 24px;
   }
 }
+
+/* TELA 2 CLIMA CIDADES */
 
 .weather-screen.default {
   background-color: #2CAEFF; 

@@ -20,9 +20,6 @@ import Rain from '../assets/icons/BsCloudRain.svg'
 import RainBlack from '../assets/icons/BsCloudRainBlack.svg'
 
 import type { CurrentWeatherResponse, ForecastItem, ForecastResponse } from '../types/weather'
-
-
-
 import { useState, useEffect } from 'react'
 import { cities } from '../data/cities'
 import { getCurrentWeather, getForecastWeather } from '../services/weatherAPI'
